@@ -1,7 +1,3 @@
-# Ejemplo Documentación Dojos
-![Tinkercad](./img/ArduinoTinkercad.jpg)
-
-
 ## Integrantes 
 - Elias Rocca
 - Sharlenne Azuaje

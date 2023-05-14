@@ -38,7 +38,7 @@ Nuestro proyecto ofrece la solución para las estaciones. Este hará ruido cuand
 Esta funcion se encarga de encender y apagar los leds y hacer funcionar el buzzer al mismo tiempo que cambia de estacion.
 ---
 ## :robot: Link al proyecto
-dojo 2: - [proyecto]([https://www.tinkercad.com/things/cX1R0gu1rSh-exquisite-juttuli/editel?sharecode=BQmo1UZ7DqtjLOX4fbMqwcFRdyF05SbzZGZ3LSGHa9w](https://www.tinkercad.com/things/hGbvPYcpGnZ-smashing-bruticus/editel?sharecode=cX_YQKygKkZ237bogBEJY86pxb8U4D3lXD40zmVkyec))
+- [proyecto]([https://www.tinkercad.com/things/cX1R0gu1rSh-exquisite-juttuli/editel?sharecode=BQmo1UZ7DqtjLOX4fbMqwcFRdyF05SbzZGZ3LSGHa9w](https://www.tinkercad.com/things/hGbvPYcpGnZ-smashing-bruticus/editel?sharecode=cX_YQKygKkZ237bogBEJY86pxb8U4D3lXD40zmVkyec))
 
 
 ### Fuentes

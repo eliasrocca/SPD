@@ -1,0 +1,138 @@
+// C++ code
+//
+#define LED_UNO 13
+#define LED_DOS 12
+#define LED_TRES 11
+#define LED_CUATRO 10
+#define LED_A 7
+#define LED_B 8
+#define LED_C A1
+#define LED_D A2
+#define LED_E A3
+#define LED_F 6
+#define LED_G 5
+#define TIEMPO 3000
+#define BOTON 9
+#define BUZZER A0
+
+
+void setup()
+{
+  pinMode(LED_UNO, OUTPUT);
+  pinMode(LED_DOS, OUTPUT);
+  pinMode(LED_TRES, OUTPUT);
+  pinMode(LED_CUATRO, OUTPUT);
+  pinMode(BUZZER, OUTPUT);
+  
+  //entrada digital
+  pinMode(BOTON,INPUT_PULLUP);
+  pinMode(LED_A, OUTPUT);
+  pinMode(LED_B, OUTPUT);
+  pinMode(LED_C, OUTPUT);
+  pinMode(LED_D, OUTPUT);
+  pinMode(LED_G, OUTPUT);
+  pinMode(LED_F, OUTPUT);
+  pinMode(LED_E, OUTPUT);
+  Serial.begin(9600);
+  
+}
+
+void prenderLed(int	led)
+{
+  digitalWrite(led , HIGH);
+}
+
+void apagarLed(int led)
+{
+  digitalWrite(led , LOW);
+  
+}
+
+
+void loop()
+{
+  int BOTONPU;
+  BOTONPU = digitalRead(BOTON);
+  
+  if (BOTONPU == 0)
+  {
+    digitalWrite(LED_UNO, HIGH);
+    digitalWrite(LED_A, HIGH);
+    digitalWrite(LED_B, HIGH);
+    digitalWrite(LED_C, HIGH);
+    digitalWrite(LED_D, HIGH);
+    digitalWrite(LED_E, HIGH);
+    digitalWrite(LED_F, HIGH);
+    digitalWrite(LED_G, LOW);
+    tone(BUZZER, 2000);
+   	delay(TIEMPO);//frecuencia del tono
+   	noTone(BUZZER); //apaga el tono
+    delay(TIEMPO);
+    digitalWrite(LED_UNO, LOW);
+    digitalWrite(LED_A, LOW);
+    digitalWrite(LED_B, LOW);
+    digitalWrite(LED_C, LOW);
+    digitalWrite(LED_D, LOW);
+    digitalWrite(LED_E, LOW);
+    digitalWrite(LED_F, LOW);
+    digitalWrite(LED_G, LOW);
+    delay(TIEMPO);
+
+    digitalWrite(LED_DOS, HIGH);
+    //1
+  	digitalWrite(LED_B,HIGH);
+  	digitalWrite(LED_C, HIGH);
+    tone(BUZZER, 1500);
+   	delay(TIEMPO);//frecuencia del tono
+   	noTone(BUZZER); //apaga el tono
+    delay(TIEMPO);
+    
+    digitalWrite(LED_DOS, LOW);
+    digitalWrite(LED_B, LOW);
+  	digitalWrite(LED_C, LOW);
+    delay(TIEMPO);
+    
+    digitalWrite(LED_TRES, HIGH);
+    digitalWrite(LED_A, HIGH);
+    digitalWrite(LED_B, HIGH);
+    digitalWrite(LED_G, HIGH);
+    digitalWrite(LED_E, HIGH);
+    digitalWrite(LED_D, HIGH);
+    tone(BUZZER, 1000);
+   	delay(TIEMPO);//frecuencia del tono
+   	noTone(BUZZER); //apaga el tono
+    delay(TIEMPO);
+ 
+    digitalWrite(LED_TRES, LOW);
+    digitalWrite(LED_A, LOW);
+    digitalWrite(LED_B, LOW);
+    digitalWrite(LED_G, LOW);
+    digitalWrite(LED_E, LOW);
+    digitalWrite(LED_D, LOW);
+    delay(TIEMPO);
+    
+    
+    digitalWrite(LED_CUATRO, HIGH);
+    digitalWrite(LED_A, HIGH);
+    digitalWrite(LED_B, HIGH);
+    digitalWrite(LED_C, HIGH);
+    digitalWrite(LED_D, HIGH);
+    digitalWrite(LED_G, HIGH);
+    tone(BUZZER, 500);
+   	delay(TIEMPO);//frecuencia del tono
+   	noTone(BUZZER); //apaga el tono
+    delay(TIEMPO);
+    
+    digitalWrite(LED_CUATRO, LOW);
+    digitalWrite(LED_A, LOW);
+    digitalWrite(LED_B, LOW);
+    digitalWrite(LED_C, LOW);
+    digitalWrite(LED_D, LOW);
+    digitalWrite(LED_G, LOW);
+    delay(TIEMPO);
+    
+    
+  }
+}
+
+
